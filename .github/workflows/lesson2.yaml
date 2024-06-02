@@ -1,0 +1,9 @@
+name: myworkflow2
+on: push
+
+jobs:
+    myfistjob:
+        runs-on: "ubuntu-release"
+        steps:
+            - name: First Step
+              run: echo "Hello World"
