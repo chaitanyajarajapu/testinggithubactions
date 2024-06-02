@@ -3,7 +3,7 @@ on: push
 
 jobs:
     myfistjob:
-        runs-on: "ubuntu-release"
+        runs-on: ubuntu-latest
         steps:
             - name: First Step
               run: echo "Hello World"
