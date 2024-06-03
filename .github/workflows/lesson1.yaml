@@ -15,5 +15,5 @@ jobs:
     steps:  
       - name: step2
         shell: bash
-        run: echo "Ths runner is $ {{ Runner_Os }}"
+        run: echo "Ths runner is $RUNNER_OS"
 
