@@ -1,5 +1,9 @@
 name: myfirstworkflow
-on: push
+on:
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
 
 jobs:
   first_job:
