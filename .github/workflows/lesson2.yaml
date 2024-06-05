@@ -1,9 +1,9 @@
-name: mysecondworkflow
-on: push
+# name: mysecondworkflow
+# on: push
 
-jobs:
-    myfistjob:
-        runs-on: ubuntu-latest
-        steps:
-            - name: First Step
-              run: echo "Hello World"
+# jobs:
+#     myfistjob:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: First Step
+#               run: echo "Hello World"
