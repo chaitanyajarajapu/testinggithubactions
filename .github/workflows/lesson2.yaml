@@ -1,9 +1,20 @@
-# name: mysecondworkflow
-# on: push
+name: teraaformworkflowtest
+on:
+    push:
+        branches:
+            - main
 
-# jobs:
-#     myfistjob:
-#         runs-on: ubuntu-latest
-#         steps:
-#             - name: First Step
-#               run: echo "Hello World"
+jobs:
+    builds:
+        runs-on: "ubuntu-latest"
+        defaults:
+            run:
+                working-directory: "04-Terraform" 
+        steps:
+            - uses: actions/checkout@v4
+            - uses: hashicorp/setup-terraform@v3.1.1
+
+            - name: "Terraform FMT"
+              id: fmt
+              run: terraform fmt
+              continue-on-error: true

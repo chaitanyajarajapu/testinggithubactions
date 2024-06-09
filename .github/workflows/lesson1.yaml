@@ -12,6 +12,8 @@ on:
 
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
   first_job:
     runs-on: ubuntu-latest
     steps:
