@@ -15,7 +15,7 @@ jobs:
             - uses: hashicorp/setup-terraform@v3.1.1
 
             - name: "List directories"
-              run: ls -l
+              run: ls
 
             - name: "Terraform FMT"
               id: fmt
